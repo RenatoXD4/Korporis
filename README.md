@@ -1,2 +1,0 @@
-# Korporis
- Proyecto Koporis

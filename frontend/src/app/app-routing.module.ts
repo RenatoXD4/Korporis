@@ -3,12 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'inicio',
-    loadChildren: () => import('./views/inicio/inicio-routing.module').then(m => m.InicioRoutingModule)
+    path: 'contacto',
+    loadChildren: () => import('./views/contacto/contacto-routing.module').then(m => m.ContactoRoutingModule)
+  },
+  {
+    path: 'index',
+    loadChildren: () => import('./app-routing.module').then(m => m.AppRoutingModule)
   },
   {
     path: '',
-    redirectTo: 'inicio',
+    redirectTo: 'index',
     pathMatch: 'full'
   },
   
