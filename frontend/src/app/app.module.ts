@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { ServiciosComponent } from './views/servicios/servicios.component';
 import { ContactoComponent } from './views/contacto/contacto.component';
+import { FooterComponent } from './layouts/footer/footer.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ContactoComponent } from './views/contacto/contacto.component';
     NavbarComponent,
     ContactoComponent,
     ServiciosComponent,
-    ContactoComponent
+    ContactoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
@@ -8,14 +9,13 @@ const routes: Routes = [
   },
   {
     path: 'index',
-    loadChildren: () => import('./app-routing.module').then(m => m.AppRoutingModule)
+    component: AppComponent // Reemplaza 'IndexComponent' con el nombre de tu componente
   },
   {
-    path: '',
-    redirectTo: 'index',
+    path: '', // Ruta predeterminada
+    redirectTo: 'index', // Redirige a 'index' como página de inicio
     pathMatch: 'full'
-  },
-  
+  }
 ];
 
 @NgModule({
