@@ -1,6 +1,6 @@
 @import "~swiper/swiper-bundle.css";
 @import 'swiper/css/bundle';
-.bg-white {
+.contenido {
     overflow: hidden; /* Evitar el desbordamiento horizontal */
   }
 
@@ -8,3 +8,7 @@
   .swiper-button-prev {
     display: none;
   }
+
+body{  /* Garantiza que el cuerpo ocupe al menos toda la altura de la ventana */
+  position: relative;
+}
