@@ -8,12 +8,12 @@ const routes: Routes = [
     loadChildren: () => import('./views/contacto/contacto-routing.module').then(m => m.ContactoRoutingModule)
   },
   {
-    path: 'index',
-    component: AppComponent // Reemplaza 'IndexComponent' con el nombre de tu componente
+    path: 'home',
+    component: AppComponent // Reemplaza 'HomeComponent' con el nombre de tu componente
   },
   {
     path: '', // Ruta predeterminada
-    redirectTo: 'index', // Redirige a 'index' como página de inicio
+    redirectTo: 'home', // Redirige a 'index' como página de inicio
     pathMatch: 'full'
   }
 ];

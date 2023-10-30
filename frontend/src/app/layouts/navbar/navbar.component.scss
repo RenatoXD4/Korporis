@@ -1,36 +1,7 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+
 
 //Color del navbar
 .colorNb{
     background: linear-gradient(to bottom,#00a19a 90% ,#F0ED38 10% )
 }
 //Color del fondo de los botones 
-.colorB{
-    background-color: #00a19a;
-}
-//Tamaño de las letras del navbar
-.texto{
-    font-size: 20px;
-}
-.custom-link {
-  text-decoration: none; 
-}
-
-.custom-link::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 3px; 
-  bottom: -5px;
-  left: 0;
-  background-color: #ffdd00;
-  transform: scaleX(0); 
-  transform-origin: bottom left;
-  transition: transform 0.2s ease-in-out
-}
-
-.custom-link:hover::after {
-  transform: scaleX(1); 
-}
