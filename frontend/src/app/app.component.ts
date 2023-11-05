@@ -1,8 +1,8 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { initFlowbite } from 'flowbite';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-import { Marker } from 'leaflet';
+import * as L from 'leaflet';
 import { MapaService } from './services/mapa.service';
 
 
@@ -32,20 +32,23 @@ export class AppComponent implements OnInit {
       },
       modules: [Navigation, Pagination],
     });
+
   }
 
 
   ngOnInit(): void {
     initFlowbite();
-
-    this.mapa.initializeMap();
-
-    // Obtén la instancia del mapa
-    const map = this.mapa.getMap();
-
-    const marker = new Marker([51.5, -0.09]).addTo(map)
-    .bindPopup('¡Hola, soy un marcador!').openPopup();;
     
+    window.addEventListener('DOMContentLoaded', () => {
+      this.mapa.initializeMap();
+      console.log("Mapa:" + this.mapa.initializeMap)
+      // Obtén la instancia del mapa
+      const map = this.mapa.getMap();
+    
+      // Agrega un marcador
+      L.marker([51.5, -0.09]).addTo(map)
+        .bindPopup('¡Hola, soy un marcador!').openPopup();
+    });
   }
 }
 

@@ -8,7 +8,6 @@ import { ServiciosComponent } from './views/servicios/servicios.component';
 import { ContactoComponent } from './views/contacto/contacto.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 
 
@@ -25,7 +24,6 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
