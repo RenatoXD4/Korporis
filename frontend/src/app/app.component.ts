@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { initFlowbite } from 'flowbite';
 import Swiper from 'swiper';
+import { Autoplay } from 'swiper/modules';
 import { Navigation, Pagination } from 'swiper/modules';
 import * as L from 'leaflet';
 import { MapaService } from './services/mapa.service';
@@ -11,7 +12,7 @@ import { MapaService } from './services/mapa.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'frontend';
 
   mySwiper: Swiper | undefined;
@@ -19,11 +20,13 @@ export class AppComponent implements OnInit {
   constructor(private mapa: MapaService) { }
 
   ngAfterViewInit(): void {
+    Swiper.use([Autoplay])
     this.mySwiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 20,
       autoplay: {
-        delay: 3000, // Aumenta el intervalo a 3000 milisegundos (3 segundos)
+        delay: 4000,
+        disableOnInteraction: false,
       },
       loop: true,
       navigation: {
@@ -50,6 +53,7 @@ export class AppComponent implements OnInit {
         .bindPopup('¡Hola, soy un marcador!').openPopup();
     });
   }
+
 }
 
 
