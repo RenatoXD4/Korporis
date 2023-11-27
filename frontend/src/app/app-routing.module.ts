@@ -4,8 +4,8 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
-    path: 'servicio',
-    loadChildren: () => import('./views/servicios/servicio-module/servicio-module.module').then(m => m.ServicioModuleModule)
+    path: 'servicios',
+    loadChildren: () => import('./views/servicios/servicios.module').then(m => m.ServiciosModule)
   },
   {
     path: 'home',
