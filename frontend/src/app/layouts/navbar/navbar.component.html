@@ -13,7 +13,7 @@
         <div id="mega-menu-full" class="items-center justify-between font-medium text-xl hidden w-full md:flex md:w-auto md:order-1  ">
             <ul class="flex flex-col p-4 md:p-0 mt-4 border  border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 colorB dark:bg-gray-800  dark:border-gray-700 ">
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 texto custom-link text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Inicio</a>
+                    <a [routerLink]="['/servicios']" class="block py-2 pl-3 pr-4 texto custom-link text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Inicio</a>
                 </li>
                 <li>
                     <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" class="flex items-center text-xl custom-link justify-between w-full py-2 pl-3 pr-4  text-white rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Servicios <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -21,7 +21,7 @@
   </svg></button>
                 </li>
                 <li>
-                    <a href="#" class="block py-2 pl-3 pr-4 text-xl custom-link text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Agenda tu hora</a>
+                    <a [routerLink]="['/servicios']" class="block py-2 pl-3 pr-4 text-xl custom-link text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Agenda tu hora</a>
                 </li>
                 <li>
                     <a href="#" class="block py-2 pl-3 pr-4 text-xl custom-link text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
@@ -39,7 +39,7 @@
         <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
             <ul>
                 <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <a [routerLink]="['servicios']" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                         <div class="font-semibold">Kinesiologia</div>
                         <span class="text-sm text-gray-500 dark:text-gray-400">Recupera el movimiento y mejora tu bienestar con nuestros expertos en kinesiología.</span>
                     </a>

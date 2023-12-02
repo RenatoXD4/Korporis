@@ -1,21 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicioRoutingModule } from './servicio-routing.module';
-import { NavbarComponent } from 'src/app/layouts/navbar/navbar.component';
-import { FooterComponent } from 'src/app/layouts/footer/footer.component';
 import { ServiciosComponent } from './servicios.component';
-
-
+import { NavbarComponent } from 'src/app/layouts/navbar/navbar.component';
 
 @NgModule({
-  declarations: [
-    NavbarComponent,
-    FooterComponent,
-    ServiciosComponent
-  ],
-  imports: [
-    ServicioRoutingModule,
-    CommonModule
-  ]
+  declarations: [ServiciosComponent],
+  imports: [CommonModule, ServicioRoutingModule],
 })
 export class ServiciosModule { }

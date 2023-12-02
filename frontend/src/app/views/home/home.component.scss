@@ -1,0 +1,25 @@
+@import "~swiper/swiper-bundle.css";
+@import 'swiper/css/bundle';
+.contenido {
+    overflow: hidden; /* Evitar el desbordamiento horizontal */
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+body{  /* Garantiza que el cuerpo ocupe al menos toda la altura de la ventana */
+  position: relative;
+}
+
+
+#map-container {
+  width: 60%; /* Ajusta el ancho según tus necesidades */
+  margin: 0 auto; /* Esto centrará el contenedor horizontalmente */
+  height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+#map {
+  height: 100%; /* Ajusta la altura del mapa al 100% del contenedor */
+}
