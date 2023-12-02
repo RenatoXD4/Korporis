@@ -26,4 +26,11 @@ export class MapaService {
     return this.map;
   }
 
+  destroyMap() {
+    if (this.map) {
+      this.map.remove();
+      this.map = undefined as any; // Limpiar la referencia al mapa
+    }
+  }
+
 }

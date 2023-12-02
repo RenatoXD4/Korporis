@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ServiciosModule } from './views/servicios/servicios.module';
-import { HomeComponent } from './views/home/home.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    loadChildren: () => import('./views/home/home-module.module').then(m => m.HomeModule)
   },
   {
     path: '', // Ruta predeterminada
