@@ -13,7 +13,7 @@ export class MapaService {
 
   initializeMap() {
     if (!this.map) {
-      this.map = L.map('map').setView([51.505, -0.09], 13);
+      this.map = L.map('map').setView([-33.47934347220281, -70.62450049198287], 13);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,

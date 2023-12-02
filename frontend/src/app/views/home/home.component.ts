@@ -35,7 +35,7 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
 
     this.mapa.initializeMap();
     const map = this.mapa.getMap();
-    L.marker([51.5, -0.09]).addTo(map).bindPopup('¡Hola, soy un marcador!').openPopup();
+    L.marker([-33.47934347220281, -70.62450049198287]).addTo(map).bindPopup('¡Hola, soy un marcador!').openPopup();
 
   }
 
