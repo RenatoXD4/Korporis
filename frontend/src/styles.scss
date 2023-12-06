@@ -31,4 +31,25 @@
     font-family: 'Manrope', sans-serif;
     position: relative;
   }
+
+  .boton {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .boton:hover{
+    transition: all ease-in-out 0.3s;
+    background-color: #ffdd00;
+    color: black;
+  }
   
