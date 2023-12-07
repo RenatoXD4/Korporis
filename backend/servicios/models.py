@@ -9,7 +9,7 @@ class Especialidad(models.Model):
 
 class Subespecialidad(models.Model):
     nombre = models.CharField(max_length=100)
-    descripcion = models.TextField(max_length=300)
+    descripcion = models.TextField()
     imagen = models.ImageField(upload_to='media/')
     especialidad = models.ForeignKey(Especialidad, on_delete=models.CASCADE)
 

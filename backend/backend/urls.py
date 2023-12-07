@@ -16,7 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from servicios.views import DatosAPIView
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name=''),
+    path('api/datos/', DatosAPIView.as_view(), name='datos_api'),
+]
+
+from django.shortcuts import redirect
+
+urlpatterns += [
+    path('', lambda request: redirect('admin/', permanent=False)),
 ]
