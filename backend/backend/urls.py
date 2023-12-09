@@ -16,12 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from servicios.views import DatosAPIView
+from servicios.views import DatosAPIView, ObtenerEspecialidadesView, ObtenerSubespecialidadesView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls, name=''),
     path('api/datos/', DatosAPIView.as_view(), name='datos_api'),
+    path('api/datos/especialidades/', ObtenerEspecialidadesView.as_view(), name='obtener_especialidades'),
+    path('api/datos/subespecialidades/<str:nombre_especialidad>/', ObtenerSubespecialidadesView.as_view(), name='obtener_subespecialidades'),
 ]
 
 from django.shortcuts import redirect
