@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServiciosModule } from './views/servicios/servicios.module';
 import { SharedModule } from './module/common-module/common-module.module';
 import { PreguntasFrecuentesComponent } from './views/preguntas-frecuentes/preguntas-frecuentes.component';
+import { ServiciosMusculoModule } from './views/serviciomusculo/servicios-musculo.module';
 
 
 
@@ -22,6 +23,7 @@ import { PreguntasFrecuentesComponent } from './views/preguntas-frecuentes/pregu
     HttpClientModule,
     ServiciosModule,
     SharedModule,  
+    ServiciosMusculoModule,
     BrowserAnimationsModule
   ],
   providers: [],
