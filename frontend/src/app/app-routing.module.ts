@@ -12,24 +12,32 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'Medicina-General',
+    path: 'Servicio-Medicina-General',
     loadChildren: () => import('./views/servicios/servicios.module').then(m => m.ServiciosModule)
   },
   {
-    path: 'preguntas-frecuentes',
+    path: 'Preguntas-Frecuentes',
     loadChildren: () => import('./views/preguntas-frecuentes/preguntas-frecuentes.module').then(m => m.PreguntasFrecuentesModule)
   },
   {
-    path: 'Músculo-Esquelético',
+    path: 'Servicio-Músculo-Esquelético',
     loadChildren: () => import('./views/serviciomusculo/servicios-musculo.module').then(m => m.ServiciosMusculoModule)
   },
   { 
-  path: 'Quienes Somos',
+  path: '¿Quiénes Somos?',
   loadChildren: () => import('./views/quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule)
   },
   { 
-    path: 'Neurológico',
+    path: 'Servicio-Neurológico',
     loadChildren: () => import('./views/servicioneuro/servicios-neuro.module').then(m => m.ServiciosModule)
+  },
+  { 
+    path: 'Servicio-IRA',
+    loadChildren: () => import('./views/servicio-ira/servicios-ira.module').then(m => m.ServiciosIraModule)
+  },
+  { 
+    path: 'Servicio-ERA',
+    loadChildren: () => import('./views/servicio-era/servicios-era.module').then(m => m.ServiciosEraModule)
   },
 ];
 
