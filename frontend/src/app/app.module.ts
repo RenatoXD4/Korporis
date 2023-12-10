@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServiciosModule } from './views/servicios/servicios.module';
 import { SharedModule } from './module/common-module/common-module.module';
 import { ServiciosMusculoModule } from './views/serviciomusculo/servicios-musculo.module';
-import { QuienesSomosModule } from './views/quienes-somos/quienes-somos.module';
 
 
 
@@ -22,16 +21,10 @@ import { QuienesSomosModule } from './views/quienes-somos/quienes-somos.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ServiciosModule,
-    SharedModule,  
-    ServiciosMusculoModule,
+    SharedModule,
     BrowserAnimationsModule,
-    QuienesSomosModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
-]
 })
 export class AppModule { }
