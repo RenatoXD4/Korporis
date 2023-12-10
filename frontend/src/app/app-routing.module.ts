@@ -26,7 +26,11 @@ const routes: Routes = [
   { 
   path: 'Quienes Somos',
   loadChildren: () => import('./views/quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule)
-}
+  },
+  { 
+    path: 'Neurológico',
+    loadChildren: () => import('./views/servicioneuro/servicios-neuro.module').then(m => m.ServiciosModule)
+  },
 ];
 
 @NgModule({
