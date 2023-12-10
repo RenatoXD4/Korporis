@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -7,15 +7,16 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiciosModule } from './views/servicios/servicios.module';
 import { SharedModule } from './module/common-module/common-module.module';
-import { PreguntasFrecuentesComponent } from './views/preguntas-frecuentes/preguntas-frecuentes.component';
 import { ServiciosMusculoModule } from './views/serviciomusculo/servicios-musculo.module';
+import { QuienesSomosModule } from './views/quienes-somos/quienes-somos.module';
+
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PreguntasFrecuentesComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -24,9 +25,13 @@ import { ServiciosMusculoModule } from './views/serviciomusculo/servicios-muscul
     ServiciosModule,
     SharedModule,  
     ServiciosMusculoModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    QuienesSomosModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+]
 })
 export class AppModule { }

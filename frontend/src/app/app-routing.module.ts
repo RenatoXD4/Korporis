@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'Músculo-Esquelético',
     loadChildren: () => import('./views/serviciomusculo/servicios-musculo.module').then(m => m.ServiciosMusculoModule)
-  }
+  },
+  { 
+  path: 'Quienes Somos',
+  loadChildren: () => import('./views/quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule)
+}
 ];
 
 @NgModule({
