@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FonoInfantilComponent } from './fono-infantil.component';
+import { SharedModule } from 'src/app/module/common-module/common-module.module';
 
 describe('FonoInfantilComponent', () => {
   let component: FonoInfantilComponent;
@@ -8,7 +9,8 @@ describe('FonoInfantilComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FonoInfantilComponent]
+      declarations: [FonoInfantilComponent],
+      imports: [SharedModule],
     })
     .compileComponents();
     

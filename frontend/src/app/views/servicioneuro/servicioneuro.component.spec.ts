@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ServicioneuroComponent } from './servicioneuro.component';
+import { SharedModule } from 'src/app/module/common-module/common-module.module';
 
 describe('ServicioneuroComponent', () => {
   let component: ServicioneuroComponent;
@@ -8,7 +9,8 @@ describe('ServicioneuroComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ServicioneuroComponent]
+      declarations: [ServicioneuroComponent],
+      imports: [SharedModule],
     })
     .compileComponents();
     

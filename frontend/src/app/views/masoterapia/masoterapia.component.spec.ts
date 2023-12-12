@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MasoterapiaComponent } from './masoterapia.component';
+import { SharedModule } from 'src/app/module/common-module/common-module.module';
 
 describe('MasoterapiaComponent', () => {
   let component: MasoterapiaComponent;
@@ -8,7 +9,8 @@ describe('MasoterapiaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MasoterapiaComponent]
+      declarations: [MasoterapiaComponent],
+      imports: [SharedModule],
     })
     .compileComponents();
     

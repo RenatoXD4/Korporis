@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ServicioEraComponent } from './servicio-era.component';
+import { SharedModule } from 'src/app/module/common-module/common-module.module';
 
 describe('ServicioEraComponent', () => {
   let component: ServicioEraComponent;
@@ -8,7 +9,8 @@ describe('ServicioEraComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ServicioEraComponent]
+      declarations: [ServicioEraComponent],
+      imports: [SharedModule],
     })
     .compileComponents();
     

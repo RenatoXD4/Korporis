@@ -1,18 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServiciomusculoComponent } from './serviciomusculo.component';
+import { ServicioMusculoComponent } from './serviciomusculo.component';
+import { SharedModule } from 'src/app/module/common-module/common-module.module';
 
 describe('ServiciomusculoComponent', () => {
-  let component: ServiciomusculoComponent;
-  let fixture: ComponentFixture<ServiciomusculoComponent>;
+  let component: ServicioMusculoComponent;
+  let fixture: ComponentFixture<ServicioMusculoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ServiciomusculoComponent]
+      declarations: [ServicioMusculoComponent],
+      imports: [SharedModule],
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ServiciomusculoComponent);
+    fixture = TestBed.createComponent(ServicioMusculoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

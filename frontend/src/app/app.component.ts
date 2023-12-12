@@ -1,7 +1,5 @@
-import { Component, Renderer2,OnInit } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { initFlowbite } from 'flowbite';
-import Swiper from 'swiper';
-import { MapaService } from './services/mapa.service';
 
 
 @Component({
@@ -10,15 +8,12 @@ import { MapaService } from './services/mapa.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'frontend';
+  title = 'Korporis';
 
-  mySwiper: Swiper | undefined;
-
-  constructor(private mapa: MapaService, private renderer: Renderer2) { }
+  constructor() { }
 
 
   ngOnInit(): void {
-
     initFlowbite();
   
   }
