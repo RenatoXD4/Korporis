@@ -12,9 +12,12 @@ import { Navigation, Pagination } from 'swiper/modules';
 })
 export class HomeComponent implements AfterViewInit, OnDestroy {
 
+  categoriaSeleccionada = 'Todos';
+
   constructor(private mapa: MapaService) { }
    mySwiper: Swiper | undefined;
 
+   
   
   ngAfterViewInit(): void {
     Swiper.use([Autoplay])
@@ -45,5 +48,8 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
       this.mapa.destroyMap();
     }
   }
+
+
+  
 
 }

@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./views/serviciomusculo/servicios-musculo.module').then(m => m.ServiciosMusculoModule)
   },
   { 
-  path: '¿Quiénes Somos?',
+  path: '¿Quiénes-Somos?',
   loadChildren: () => import('./views/quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule)
   },
   { 

@@ -1,0 +1,12 @@
+.cardH {
+    padding: 10px 20px;
+    border: none;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s; /* Agregar transición para suavizar el cambio */
+  }
+  
+  /* Efecto al pasar el mouse por encima */
+  .cardH:hover {
+    background-color: #00a19a; /* Cambia el color de fondo al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al inverso */
+  }

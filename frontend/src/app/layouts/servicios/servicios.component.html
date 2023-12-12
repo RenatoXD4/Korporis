@@ -1,0 +1,49 @@
+<div class="bg-white contenido justify-center flex flex-wrap gap-4 p-4 rounded-lg lg:max-w-7xl mx-auto w-full">
+    <button (click)="categoriaSeleccionada='Todos'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Todos </button>
+
+    <button (click)="categoriaSeleccionada='Kine'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Kinesiologia</button>
+
+    <button (click)="categoriaSeleccionada='Maso'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Masoterapia</button>
+
+    <button (click)="categoriaSeleccionada='Fono'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Fonoaudiologia</button>
+
+    <button (click)="categoriaSeleccionada='MedGen'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Medicina General</button>
+  </div>
+  
+  <div class="bg-white contenido justify-center flex flex-wrap gap-4 p-4 rounded-lg lg:max-w-7xl mx-auto w-full">
+    
+<a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'Kine'" class="  max-w-sm p-6 cardH bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+<h5 class="mb-2 text-2xl font-bold tracking-tight ">Musculos Esqueleticos</h5>
+<p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+</a>
+<a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'Kine'" class="cardH  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+  <h5 class="mb-2 text-2xl font-bold tracking-tight ">Neurologica</h5>
+  <p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+  </a>
+  
+  <a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'Kine'" class=" cardH max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <h5 class="mb-2 text-2xl font-bold tracking-tight ">IRA(Niños)</h5>
+    <p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+    </a>
+    <a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'Kine'" class="cardH max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight ">ERA(Adultos)</h5>
+      <p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+      </a>
+      <a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'Maso'" class=" cardH max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight ">Masoterapia</h5>
+        <p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        </a>
+        <a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'Fono'"  class=" cardH max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight ">Fonoaudiologia Niños</h5>
+          <p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          </a>   
+          <a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'Fono'"  class=" cardH max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight ">Fonoaudiologia Adultos</h5>
+            <p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </a>     
+            <a href="#" *ngIf="categoriaSeleccionada === 'Todos' || categoriaSeleccionada === 'MedGen'"  class=" cardH max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight ">Medicina General</h5>
+              <p class="font-normal ">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              </a>  
+  </div>
+  
