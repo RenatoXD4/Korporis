@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./views/serviciomusculo/servicios-musculo.module').then(m => m.ServiciosMusculoModule)
   },
   { 
-  path: '¿Quiénes Somos?',
+  path: 'Quienes-Somos',
   loadChildren: () => import('./views/quienes-somos/quienes-somos.module').then(m => m.QuienesSomosModule)
   },
   { 
@@ -38,6 +38,18 @@ const routes: Routes = [
   { 
     path: 'Servicio-ERA',
     loadChildren: () => import('./views/servicio-era/servicios-era.module').then(m => m.ServiciosEraModule)
+  },
+  { 
+    path: 'Servicio-FonoAudiología-Adulto',
+    loadChildren: () => import('./views/fono-adulto/fono-adulto.module').then(m => m.FonoAdultoModule)
+  },
+  { 
+    path: 'Servicio-FonoAudiología-Infantil',
+    loadChildren: () => import('./views/fono-infantil/fono-infantil.module').then(m => m.FonoInfantilModule)
+  },
+  { 
+    path: 'Servicio-Masoterapia',
+    loadChildren: () => import('./views/masoterapia/maso.module').then(m => m.MasoModule)
   },
 ];
 

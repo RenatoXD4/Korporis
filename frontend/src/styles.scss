@@ -37,7 +37,7 @@
     width: 200px;
     font-weight: 700;
     height: 50px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
@@ -46,11 +46,11 @@
     color: white;
     border: none;
     border-radius: 5px;
+    transition: all ease-in-out 0.3s; /* Aplicar la transición al estado normal también */
   }
 
-  .boton:hover{
-    transition: all ease-in-out 0.3s;
-    background-color: #ffdd00;
-    color: black;
+  .boton:hover {
+      background-color: #ffdd00;
+      color: black;
   }
   
