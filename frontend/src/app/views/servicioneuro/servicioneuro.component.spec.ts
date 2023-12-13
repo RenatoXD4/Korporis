@@ -7,10 +7,10 @@ describe('ServicioneuroComponent', () => {
   let component: ServicioneuroComponent;
   let fixture: ComponentFixture<ServicioneuroComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ServicioneuroComponent],
+  beforeEach( () => {
+     TestBed.configureTestingModule({
       imports: [SharedModule],
+      declarations: [ServicioneuroComponent],
     })
     .compileComponents();
     

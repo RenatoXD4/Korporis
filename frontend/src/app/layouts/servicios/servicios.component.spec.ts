@@ -1,18 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServiciosComponent } from './servicios.component';
+import { ServiciosTodosComponent } from './serviciosTodos.component';  // Asegúrate de importar tu componente
+import { SharedModule } from 'src/app/module/common-module/common-module.module';  // Asegúrate de importar el módulo que contiene tu componente
 
-describe('ServiciosComponent', () => {
-  let component: ServiciosComponent;
-  let fixture: ComponentFixture<ServiciosComponent>;
+describe('ServiciosTodosComponent', () => {
+  let component: ServiciosTodosComponent;
+  let fixture: ComponentFixture<ServiciosTodosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ServiciosComponent]
+      declarations: [ServiciosTodosComponent],  // Declara tu componente aquí
+      imports: [SharedModule]  // Importa el módulo que contiene tu componente
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ServiciosComponent);
+    fixture = TestBed.createComponent(ServiciosTodosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

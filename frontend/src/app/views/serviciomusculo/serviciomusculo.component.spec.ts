@@ -7,8 +7,8 @@ describe('ServiciomusculoComponent', () => {
   let component: ServicioMusculoComponent;
   let fixture: ComponentFixture<ServicioMusculoComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach( () => {
+    TestBed.configureTestingModule({
       declarations: [ServicioMusculoComponent],
       imports: [SharedModule],
     })

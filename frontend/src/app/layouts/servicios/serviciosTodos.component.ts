@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './servicios.component.html',
   styleUrl: './servicios.component.scss'
 })
-export class ServiciosComponent {
+export class ServiciosTodosComponent {
   categoriaSeleccionada = 'Todos';
 }

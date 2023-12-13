@@ -9,9 +9,10 @@ describe('ServiciosComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ServiciosComponent],
       imports: [SharedModule],
-    });
+      declarations: [ServiciosComponent],
+    }).compileComponents();
+    
     fixture = TestBed.createComponent(ServiciosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -21,3 +22,4 @@ describe('ServiciosComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
