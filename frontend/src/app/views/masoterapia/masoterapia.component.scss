@@ -1,5 +1,5 @@
 .card {
-    background-color: #00a19a;
+    background-color: #3a8280;
     border: 2px solid #00796b;
     border-radius: 8px;
     padding: 10px; /* Puedes ajustar el padding según tus necesidades */
@@ -23,13 +23,16 @@
 }
 
 
+
+
 .background{
     position: relative;
 }
 
 .background-image{
-    background-image: url("https://i0.wp.com/www.charlestonsouthern.edu/wp-content/uploads/2019/07/kinesiology.jpg?fit=2048%2C948&ssl=1");
-    filter: blur(4px);
+    background-image: url("https://camillaschile.cl/wp-content/uploads/2023/10/shutterstock_1498411613-scaled.jpg");
+    filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.297);
     z-index: -1;
     background-blend-mode: overlay;
     position: absolute;

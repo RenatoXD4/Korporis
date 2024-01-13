@@ -1,5 +1,5 @@
 .card {
-    background-color: #00a19a;
+    background-color: #3a8280;
     border: 2px solid #00796b;
     border-radius: 8px;
     padding: 10px; /* Puedes ajustar el padding según tus necesidades */
@@ -27,8 +27,9 @@
 }
 
 .background-image{
-    background-image: url("https://i0.wp.com/www.charlestonsouthern.edu/wp-content/uploads/2019/07/kinesiology.jpg?fit=2048%2C948&ssl=1");
-    filter: blur(2px);
+    background-image: url("https://images.squarespace-cdn.com/content/v1/56257cd5e4b046286a8a63f4/1489431649968-H0G6UIV4JG8D7IQGZW6V/speech-therapy-for-adults");
+    filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.297);
     z-index: -1;
     background-blend-mode: overlay;
     position: absolute;
