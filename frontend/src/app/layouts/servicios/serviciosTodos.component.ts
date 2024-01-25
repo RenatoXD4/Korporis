@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './servicios.component.scss'
 })
 export class ServiciosTodosComponent {
-  categoriaSeleccionada = 'Todos';
+  categoriaSeleccionada = 'Kine';
 }
