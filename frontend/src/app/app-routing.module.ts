@@ -40,11 +40,11 @@ const routes: Routes = [
     loadChildren: () => import('./views/servicio-era/servicios-era.module').then(m => m.ServiciosEraModule)
   },
   { 
-    path: 'Servicio-FonoAudiología-Adulto',
+    path: 'Servicio-FonoAudiologia-Adulto',
     loadChildren: () => import('./views/fono-adulto/fono-adulto.module').then(m => m.FonoAdultoModule)
   },
   { 
-    path: 'Servicio-FonoAudiología-Infantil',
+    path: 'Servicio-FonoAudiologia-Infantil',
     loadChildren: () => import('./views/fono-infantil/fono-infantil.module').then(m => m.FonoInfantilModule)
   },
   { 
