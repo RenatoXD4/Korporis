@@ -5,6 +5,14 @@ import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
 import { Navigation, Pagination } from 'swiper/modules';
 
+interface Service {
+  name: string;
+  time: string;
+  price: string;
+  clockIcon: string;
+  moneyIcon: string;
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,6 +26,14 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
    mySwiper: Swiper | undefined;
 
    
+   services: Service[] = [
+    { name: "Masaje descontracturante", time: "40 minutos", price: "25.000", clockIcon: "clock2.svg", moneyIcon: "dinero.svg" },
+    { name: "Drenaje linfático", time: "40 minutos", price: "22.000", clockIcon: "clock2.svg", moneyIcon: "dinero.svg" },
+    { name: "Masaje deportivo", time: "30 minutos", price: "23.000", clockIcon: "clock2.svg", moneyIcon: "dinero.svg" },
+    { name: "Masaje relajante", time: "30 minutos", price: "20.000", clockIcon: "clock2.svg", moneyIcon: "dinero.svg" },
+    { name: "Masaje post operatorio", time: "30 minutos", price: "20.000", clockIcon: "clock2.svg", moneyIcon: "dinero.svg" },
+    // Agrega más servicios si es necesario
+  ];
   
   ngAfterViewInit(): void {
     Swiper.use([Autoplay])

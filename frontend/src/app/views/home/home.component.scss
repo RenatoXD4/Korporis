@@ -24,3 +24,9 @@ body{  /* Garantiza que el cuerpo ocupe al menos toda la altura de la ventana */
   height: 100%; /* Ajusta la altura del mapa al 100% del contenedor */
 }
 
+.text-ellipsis3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
