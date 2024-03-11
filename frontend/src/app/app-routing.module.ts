@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'Servicio-Masoterapia',
     loadChildren: () => import('./views/masoterapia/maso.module').then(m => m.MasoModule)
   },
+  { 
+    path: 'Servicio-Geriatrica',
+    loadChildren: () => import('./views/serviciogeria/servicios-geria.module').then(m => m.ServiciosGeriaModule)
+  },
 ];
 
 @NgModule({

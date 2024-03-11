@@ -1,5 +1,6 @@
 
     <app-navbar></app-navbar>
+    
 
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
       <!-- Carousel wrapper -->
@@ -51,8 +52,8 @@
 
     <h1 class="font-extrabold text-2xl flex justify-center  mb-8 mt-8" style="color: #00a19a;">Servicios</h1>
     <app-servicios></app-servicios>
-    <h1 class="font-bold text-2xl flex justify-center mb-8 mt-8" style="color: #00a19a;" >Medios de pago y previsiones</h1>
-    <section class="colorNb pt-8  grid-rows-2 relative z-0" >
+    <section class="colorNb pt-8 relative z-0" >
+      <h1 class="font-bold text-2xl flex text-white justify-center mb-8 mt-2" >Medios de pago y previsiones</h1>
       <div class="bg-white contenido p-4 rounded-lg shadow-md mx-auto " style="width: 60%;">
         <div class="swiper-container">
           <div class="swiper-wrapper">
@@ -133,6 +134,11 @@
                     class="w-full lg:w-64 h-36 object-contain rounded-lg transition-transform transform hover:scale-110"
                     src="../assets/redcompra.png" alt="Imagen 3">
                 </div>
+                <div class="w-full lg:w-64 md:w-1/2 p-2">
+                  <img
+                    class="w-full lg:w-64 h-36 object-contain rounded-lg transition-transform transform hover:scale-110"
+                    src="../assets/visaLogo.webp" alt="Imagen 3">
+                </div>
               </div>
             </div>
           </div>
@@ -147,7 +153,7 @@
         <img src="assets/dinero.svg" class="h-12 w-12" alt="Dinero Logo">
         <h1 class="text-white font-bold text-4xl">Precios</h1>
       </div>
-      <section class="sm:flex sm:flex-col md:grid md:grid-cols-2 md:grid-rows-2 md:gap-4 mb-[70px] justify-center">
+      <section class="sm:flex sm:flex-col md:grid md:grid-cols-3 md:gap-4 mb-[70px] justify-between">
         <div *ngFor="let service of services" class="flex flex-col items-center">
           <span class="text-yellow-300 font-medium text-3xl mb-3">{{ service.name }}</span>
           <div class="flex items-center gap-3 mb-2">
