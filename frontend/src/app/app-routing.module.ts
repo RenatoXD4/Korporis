@@ -55,6 +55,10 @@ const routes: Routes = [
     path: 'Servicio-Geriatrica',
     loadChildren: () => import('./views/serviciogeria/servicios-geria.module').then(m => m.ServiciosGeriaModule)
   },
+  { 
+    path: 'Servicio-Psicomotriz',
+    loadChildren: () => import('./views/serviciomotriz/servicios-musculo.module').then(m => m.ServiciosMusculoModule)
+  },
 ];
 
 @NgModule({
