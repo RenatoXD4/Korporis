@@ -1,37 +1,37 @@
-    <div class="contenido justify-center flex flex-wrap gap-4 p-4 rounded-lg lg:max-w-7xl mx-auto w-full">
-
-        <button (click)="categoriaSeleccionada='Kine'" type="button"
-            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-            style="width: 150px; height: 60px ">Kinesiología</button>
-
-        <button (click)="categoriaSeleccionada='Maso'" type="button"
-            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-            style="width: 150px; height: 60px ">Masoterapia</button>
-
-        <button (click)="categoriaSeleccionada='Fono'" type="button"
-            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-            style="width: 150px; height: 60px ">Fonoaudiología</button>
-
-
+<div class="justify-center grid sm:grid-cols-1 xl:grid-cols-3 md:grid-cols-2 sm:p-2 md:p-4 gap-4 lg:max-w-7xl mx-auto w-full overflow-x-auto">
+    <!-- Cuadro para Kinesiología -->
+    <div class="md:w-[400px] md:h-[370px] bg-gray-800 dark:bg-gray-800 border-yellow-300 border-solid border-[5px] p-3 shadow">
+        <h2 class="font-bold text-2xl text-center text-white border-b pb-4 border-white">Kinesiología</h2>
+        <ul class="mt-6 space-y-4 text-left">
+            <li class="font-semibold text-white text-lg">- Preferencial Fonasa: $16.000/40-50 Minutos</li>
+            <li class="font-semibold text-white text-lg">- Masaje deportivo: $23.000</li>
+            <!-- Agrega más servicios de Kinesiología si es necesario -->
+        </ul>
     </div>
 
-    <div class="flex justify-center mx-auto">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
-          <ng-container *ngFor="let service of services">
-            <div *ngIf="categoriaSeleccionada === service.categoria" class="w-full max-w-xs h-full rounded overflow-hidden shadow-lg bg-white dark:bg-gray-800">
-              <div class="flex h-full">
-                <img [src]="'assets/' + service.clockIcon" alt="{{ service.name }}" class="w-[30px] h-[30px] object-cover mr-2">
-                <div class="flex flex-col justify-between">
-                  <div>
-                    <div class="font-bold text-xl mb-2">{{ service.name }}</div>
-                    <p class="text-gray-700 text-base">
-                      Tiempo: {{ service.time }}<br>
-                      Precio: {{ service.price }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ng-container>
-        </div>
-      </div>
+
+    <div class="md:w-[400px] md:h-[370px] bg-gray-800 dark:bg-gray-800 border-yellow-300 border-solid border-[5px] p-3 shadow">
+        <h2 class="font-bold text-2xl text-center text-white border-b pb-4 border-white">Fonoaudiología</h2>
+        <ul class="mt-6 space-y-4 text-left">
+            <li class="font-semibold text-white text-lg">- Masaje post operatorio: $20.000</li>
+            <!-- Agrega más servicios de Fonoaudiología si es necesario -->
+        </ul>
+    </div>
+
+    <!-- Cuadro para Masoterapia -->
+    <div class="md:w-[400px] md:h-[370px] bg-gray-800 dark:bg-gray-800 border-yellow-300 border-solid border-[5px] p-3 shadow">
+        <h2 class="font-bold text-2xl text-center text-white border-b pb-4 border-white">Masoterapia</h2>
+        <ul class="mt-6 space-y-4 text-left">
+            <li class="font-semibold text-white text-lg">- Masaje relajante: $20.000/30 Minutos</li>
+            <li class="font-semibold text-white text-lg">- Drenaje linfático: $22.000/40 Minutos</li>
+            <li class="font-semibold text-white text-lg">- Masaje deportivo: $23.000/30 Minutos</li>
+            <li class="font-semibold text-white text-lg">- Masaje post operatorio: $20.000/30 Minutos</li>
+            <li class="font-semibold text-white text-lg">- Masaje descontracturante: $25.000/40 Minutos</li>
+            <!-- Agrega más servicios de Masoterapia si es necesario -->
+        </ul>
+    </div>
+
+    <!-- Cuadro para Fonoaudiología -->
+</div>
+
+      
