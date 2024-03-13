@@ -1,151 +1,212 @@
 <div class="bg-white contenido justify-center flex flex-wrap gap-4 p-4 rounded-lg lg:max-w-7xl mx-auto w-full">
 
-    <button (click)="categoriaSeleccionada='Kine'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" style="width: 150px; height: 60px " >Kinesiología</button>
+    <button (click)="categoriaSeleccionada='Kine'" type="button"
+        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        style="width: 150px; height: 60px ">Kinesiología</button>
 
-    <button (click)="categoriaSeleccionada='Maso'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" style="width: 150px; height: 60px ">Masoterapia</button>
+    <button (click)="categoriaSeleccionada='Maso'" type="button"
+        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        style="width: 150px; height: 60px ">Masoterapia</button>
 
-    <button (click)="categoriaSeleccionada='Fono'" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" style="width: 150px; height: 60px ">Fonoaudiología</button>
+    <button (click)="categoriaSeleccionada='Fono'" type="button"
+        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        style="width: 150px; height: 60px ">Fonoaudiología</button>
 
-   
-  </div>
-  
-  <div class="bg-white contenido justify-center flex flex-wrap gap-4 p-4 rounded-lg lg:max-w-7xl mx-auto w-full">
-    
-    <div *ngIf=" categoriaSeleccionada === 'Kine'" class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="/Servicio-Músculo-Esquelético">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Kinesiología Músculo Esquelético</h5>
-      </a>
-      <p class="mb-3 font-semibold">La kinesiología musculoesquelética se centra en mejorar el movimiento y la función del sistema musculoesquelético para prevenir, recuperar y rehabilitar personas en diversas condiciones de salud y etapas de vida.</p>
-      <a href="/Servicio-Músculo-Esquelético" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color:  #77cdff;">
-          Ver más
-          <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-          </svg>
-      </a>
-  </div>  
-  
 
-  <div *ngIf="categoriaSeleccionada === 'Kine'" class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-    <a href="/Servicio-Neurológico">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología Neurológica</h5>
-    </a>
-    <p class="mb-3 font-semibold">La kinesiología neurológica se ocupa de mejorar la función motora y la calidad de vida de personas con trastornos neurológicos a través de intervenciones especializadas y rehabilitación.</p>
-    <div class="mt-auto">
-        <a href="/Servicio-Neurológico" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color:  #77cdff;">
+</div>
+
+<div class="bg-white contenido justify-center flex flex-wrap gap-4 p-4 rounded-lg lg:max-w-7xl mx-auto w-full">
+
+    <div *ngIf=" categoriaSeleccionada === 'Kine'"
+        class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="/Servicio-Músculo-Esquelético">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Kinesiología Músculo Esquelético</h5>
+        </a>
+        <p class="mb-3 font-semibold">La kinesiología musculoesquelética se centra en mejorar el movimiento y la función
+            del sistema musculoesquelético para prevenir, recuperar y rehabilitar personas en diversas condiciones de
+            salud y etapas de vida.</p>
+        <a href="/Servicio-Músculo-Esquelético"
+            class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300"
+            style="background-color:  #77cdff;">
             Ver más
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
         </a>
     </div>
-</div>
 
-<div *ngIf="categoriaSeleccionada === 'Kine'" class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-    <a href="/Servicio-IRA">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología IRA(Niños)</h5>
-    </a>
-    <p class="mb-3 font-semibold">Atención kinésica especializada para niños con enfermedades respiratorias, incluyendo educación, tratamiento y seguimiento.</p>
-    <div class="mt-auto">
-      <a href="/Servicio-IRA" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color: #77cdff;">
-        Ver más
-        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-      </a>
+
+    <div *ngIf="categoriaSeleccionada === 'Kine'"
+        class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+        <a href="/Servicio-Neurológico">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología Neurológica</h5>
+        </a>
+        <p class="mb-3 font-semibold">La kinesiología neurológica se ocupa de mejorar la función motora y la calidad de
+            vida de personas con trastornos neurológicos a través de intervenciones especializadas y rehabilitación.</p>
+        <div class="mt-auto">
+            <a href="/Servicio-Neurológico"
+                class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300"
+                style="background-color:  #77cdff;">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
     </div>
-  </div>
-  
-<div *ngIf=" categoriaSeleccionada === 'Kine'" class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="/Servicio-ERA">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Kinesiología ERA(Adultos)</h5>
-  </a>
-  <p class="mb-3 font-semibold">Atención kinésica especializada para adultos con enfermedades respiratorias, incluyendo educación, tratamiento y seguimiento.</p>
-  
-  
-  <a href="/Servicio-ERA" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color:  #77cdff;">
-      Ver más
-      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-      </svg>
-  </a>
-</div>  
 
-<div *ngIf="categoriaSeleccionada === 'Kine'" class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-    <a href="/Servicio-Geriatrica">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología Geriátrica</h5>
-    </a>
-    <p class="mb-3 font-semibold">La kinesiología geriátrica se enfoca en mejorar la movilidad, la fuerza y la calidad de vida en la tercera edad.</p>
-    <div class="mt-auto">
-        <a href="/Servicio-Geriatrica" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color: #77cdff;">
+    <div *ngIf="categoriaSeleccionada === 'Kine'"
+        class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+        <a href="/Servicio-IRA">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología IRA(Niños)</h5>
+        </a>
+        <p class="mb-3 font-semibold">Atención kinésica especializada para niños con enfermedades respiratorias,
+            incluyendo educación, tratamiento y seguimiento.</p>
+        <div class="mt-auto">
+            <a href="/Servicio-IRA"
+                class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300"
+                style="background-color: #77cdff;">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div *ngIf=" categoriaSeleccionada === 'Kine'"
+        class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="/Servicio-ERA">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Kinesiología ERA(Adultos)</h5>
+        </a>
+        <p class="mb-3 font-semibold">Atención kinésica especializada para adultos con enfermedades respiratorias,
+            incluyendo educación, tratamiento y seguimiento.</p>
+
+
+        <a href="/Servicio-ERA"
+            class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300"
+            style="background-color:  #77cdff;">
             Ver más
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
         </a>
     </div>
-</div>
 
-<div *ngIf="categoriaSeleccionada === 'Kine'" class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
-    <a href="/Servicio-Psicomotriz">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología Psicomotriz</h5>
-    </a>
-    <p class="mb-3 font-semibold">La kinesiología psicomotriz se centra en estimular el desarrollo motor y cognitivo, promoviendo la integración mente-cuerpo.</p>
-    <div class="mt-auto">
-        <a href="/Servicio-Kinesiología-Psicomotriz" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color: #77cdff;">
+    <div *ngIf="categoriaSeleccionada === 'Kine'"
+        class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+        <a href="/Servicio-Geriatrica">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología Geriátrica</h5>
+        </a>
+        <p class="mb-3 font-semibold">La kinesiología geriátrica se enfoca en mejorar la movilidad, la fuerza y la
+            calidad de vida en la tercera edad.</p>
+        <div class="mt-auto">
+            <a href="/Servicio-Geriatrica"
+                class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300"
+                style="background-color: #77cdff;">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div *ngIf="categoriaSeleccionada === 'Kine'"
+        class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+        <a href="/Servicio-Psicomotriz">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología Psicomotriz</h5>
+        </a>
+        <p class="mb-3 font-semibold">La kinesiología psicomotriz se centra en estimular el desarrollo motor y
+            cognitivo, promoviendo la integración mente-cuerpo.</p>
+        <div class="mt-auto">
+            <a href="/Servicio-Kinesiología-Psicomotriz"
+                class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300"
+                style="background-color: #77cdff;">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div *ngIf=" categoriaSeleccionada === 'Maso'"
+        class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="/Servicio-Masoterapia">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Masoterapia</h5>
+        </a>
+        <p class="mb-3 font-semibold">La masoterapia es una técnica terapéutica que utiliza manipulación manual para
+            aliviar tensiones, mejorar la circulación y reducir el estrés en los tejidos blandos del cuerpo, como
+            músculos y articulaciones.</p>
+
+        <a href="/Servicio-Masoterapia"
+            class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300"
+            style="background-color:  #77cdff;">
             Ver más
-            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
             </svg>
         </a>
     </div>
-</div>
- 
-<div *ngIf=" categoriaSeleccionada === 'Maso'" class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="/Servicio-Masoterapia">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Masoterapia</h5>
-  </a>
-  <p class="mb-3 font-semibold">La masoterapia es una técnica terapéutica que utiliza manipulación manual para aliviar tensiones, mejorar la circulación y reducir el estrés en los tejidos blandos del cuerpo, como músculos y articulaciones.</p>
-  
-  <a href="/Servicio-Masoterapia" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color:  #77cdff;">
-      Ver más
-      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-      </svg>
-  </a>
-</div>
 
-<div *ngIf=" categoriaSeleccionada === 'Fono'" class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="/Servicio-FonoAudiologia-Infantil">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Fonoaudiología Niños</h5>
-  </a>
-  <p class="mb-3 font-semibold">
-    La fonoaudiología pediátrica trata trastornos del habla, lenguaje, audición y deglución en niños, mejorando sus habilidades comunicativas y orales.</p>
-  
-  <a href="/Servicio-FonoAudiologia-Infantil" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color:  #77cdff;">
-      Ver más
-      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-      </svg>
-  </a>
-</div>  
+    <div *ngIf=" categoriaSeleccionada === 'Fono'"
+        class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="/Servicio-FonoAudiologia-Infantil">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Fonoaudiología Niños</h5>
+        </a>
+        <p class="mb-3 font-semibold">
+            La fonoaudiología pediátrica trata trastornos del habla, lenguaje, audición y deglución en niños, mejorando
+            sus habilidades comunicativas y orales.</p>
 
-<div *ngIf=" categoriaSeleccionada === 'Fono'" class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a href="/Servicio-FonoAudiologia-Adulto">
-      <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Fonoaudiología Adultos</h5>
-  </a>
-  <p class="mb-3 font-semibold">
-    
-La fonoaudiología en adultos trata trastornos del habla, lenguaje, audición y deglución, buscando mejorar las habilidades comunicativas y orales de los pacientes.</p>
-  
-  <a href="/Servicio-FonoAudiologia-Adulto" class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300" style="background-color:  #77cdff;">
-      Ver más
-      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-      </svg>
-  </a>
-</div>  
-       
-        
-           
-  </div>
-  
+        <a href="/Servicio-FonoAudiologia-Infantil"
+            class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300"
+            style="background-color:  #77cdff;">
+            Ver más
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+        </a>
+    </div>
+
+    <div *ngIf=" categoriaSeleccionada === 'Fono'"
+        class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="/Servicio-FonoAudiologia-Adulto">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight   ">Fonoaudiología Adultos</h5>
+        </a>
+        <p class="mb-3 font-semibold">
+
+            La fonoaudiología en adultos trata trastornos del habla, lenguaje, audición y deglución, buscando mejorar
+            las habilidades comunicativas y orales de los pacientes.</p>
+
+        <a href="/Servicio-FonoAudiologia-Adulto"
+            class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black   focus:ring-4 focus:outline-none focus:ring-blue-300"
+            style="background-color:  #77cdff;">
+            Ver más
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+        </a>
+    </div>
+
+
+
+</div>

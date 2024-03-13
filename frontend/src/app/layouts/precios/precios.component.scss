@@ -1,0 +1,16 @@
+.cardH {
+    padding: 10px 30px;
+    border: none;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s; /* Agregar transición para suavizar el cambio */
+  }
+  
+  /* Efecto al pasar el mouse por encima */
+  .cardH:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse */
+    color: #000000; /* Cambia el color del texto al inverso */
+  }
+
+.max-w-full {
+    max-width: 100%; /* Establecer el ancho máximo al 100% */
+}

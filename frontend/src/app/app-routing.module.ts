@@ -12,10 +12,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'Servicio-Medicina-General',
-    loadChildren: () => import('./views/servicios/servicios.module').then(m => m.ServiciosModule)
-  },
-  {
     path: 'Preguntas-Frecuentes',
     loadChildren: () => import('./views/preguntas-frecuentes/preguntas-frecuentes.module').then(m => m.PreguntasFrecuentesModule)
   },

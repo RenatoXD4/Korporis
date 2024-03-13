@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServiciogeriaComponent } from './serviciogeria.component';
+import { PreciosComponent } from './precios.component';
 import { SharedModule } from 'src/app/module/common-module/common-module.module';
 
-describe('ServiciogeriaComponent', () => {
-  let component: ServiciogeriaComponent;
-  let fixture: ComponentFixture<ServiciogeriaComponent>;
+describe('PreciosComponent', () => {
+  let component: PreciosComponent;
+  let fixture: ComponentFixture<PreciosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ServiciogeriaComponent],
-      imports:[SharedModule]
+      imports: [SharedModule],
+      declarations: [PreciosComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ServiciogeriaComponent);
+    fixture = TestBed.createComponent(PreciosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
