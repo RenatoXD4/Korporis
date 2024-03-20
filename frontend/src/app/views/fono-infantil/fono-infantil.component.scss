@@ -27,8 +27,8 @@
 }
 
 .background-image{
-    background-image: url("https://inspirationcenter.bz/wp-content/uploads/2014/03/IMG_8693_resized.jpg");
-    filter: blur(4px);
+    background: url(../../../assets/fonoFondo3.jpg);
+    filter: blur(1px);
     background-color: rgba(255, 255, 255, 0.297);
     z-index: -1;
     background-blend-mode: overlay;
