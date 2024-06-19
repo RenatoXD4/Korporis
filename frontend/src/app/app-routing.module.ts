@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   { 
     path: 'Servicio-Neurológico',
-    loadChildren: () => import('./views/vestibular/servicios-neuro.module').then(m => m.ServiciosModule)
+    loadChildren: () => import('./views/servicioneuro/servicios-neuro.module').then(m => m.ServiciosModule)
   },
   { 
     path: 'Servicio-IRA',
@@ -58,6 +58,10 @@ const routes: Routes = [
   { 
     path: 'Servicio-Pelvico',
     loadChildren: () => import('./views/piso-pelvico/piso-pelvico.module').then(m => m.PisoPelvicoModule)
+  },
+  { 
+    path: 'Servicio-Vestibular',
+    loadChildren: () => import('./views/vestibular/servicios-vestibular.module').then(m => m.ServiciosVestibularModule)
   },
 ];
 
