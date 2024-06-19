@@ -143,6 +143,26 @@
         </div>
     </div>
 
+    <div *ngIf="categoriaSeleccionada === 'Kine'"
+    class="max-w-sm p-6 bg-white border cardH border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col">
+        <a href="/Servicio-Pelvico">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">Kinesiología de Piso Pélvico</h5>
+        </a>
+        <p class="mb-3 font-semibold">Está diseñado para ayudar a fortalecer y rehabilitar los músculos del piso pélvico, mejorando su control y funcionalidad.</p>
+        <div class="mt-auto">
+            <a href="/Servicio-Pelvico"
+                class="inline-flex items-center px-3 py-2 text-sm font-bold text-center rounded-lg text-black focus:ring-4 focus:outline-none focus:ring-blue-300"
+                style="background-color: #77cdff;">
+                Ver más
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
     <div *ngIf=" categoriaSeleccionada === 'Maso'"
         class="max-w-sm p-6 bg-white border cardH    border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="/Servicio-Masoterapia">
