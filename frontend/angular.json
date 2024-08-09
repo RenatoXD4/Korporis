@@ -26,7 +26,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets/Icono_korporis_k1_1.png",
+              "src/assets/Korporis-Imgs/IconoKorporis.ico",
               "src/assets",
               {
                 "glob": "_redirects",
