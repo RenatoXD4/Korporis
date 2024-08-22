@@ -6,7 +6,7 @@ import * as L from 'leaflet';
 })
 export class MapaService {
 
-  private map!: L.Map;
+  private map: L.Map | null = null;
 
 
   constructor() { }
@@ -15,21 +15,25 @@ export class MapaService {
     if (!this.map) {
       this.map = L.map('map').setView([-33.47934347220281, -70.62450049198287], 13);
 
+      const markers = L.layerGroup().addTo(this.map);
+
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       }).addTo(this.map);
+
+      L.marker([-33.47934347220281, -70.62450049198287]).addTo(markers)
+      .bindPopup('Juan Sebastián Bach 208, San Joaquín').openPopup();
+
+
     }
   }
 
-  getMap(): L.Map {
-    return this.map;
-  }
 
   destroyMap() {
     if (this.map) {
       this.map.remove();
-      this.map = undefined as any; // Limpiar la referencia al mapa
+      this.map = null; // Limpiar la referencia al mapa
     }
   }
 

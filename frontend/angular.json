@@ -28,6 +28,8 @@
             "assets": [
               "src/assets/Korporis-Imgs/IconoKorporis.ico",
               "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml",
               {
                 "glob": "_redirects",
                 "input": "src",
@@ -95,9 +97,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/robots.txt",
-              "src/sitemap.xml"
+              "src/assets"
             ],
             "styles": [
               "src/styles.scss"
