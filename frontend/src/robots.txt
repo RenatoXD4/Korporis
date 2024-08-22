@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+
+Sitemap: https://korporis.cl/sitemap.xml
