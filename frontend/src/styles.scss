@@ -20,7 +20,7 @@
     left: 0;
     background-color: #ffdd00; /* Cambia el color del subrayado */
     transform: scaleX(0); /* Inicialmente oculto */
-    transform-origin: bottom left;
+    transform-origin: bottom center;
     transition: transform 0.2s ease-in-out
   }
   
