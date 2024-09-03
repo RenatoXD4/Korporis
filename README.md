@@ -1,6 +1,7 @@
 Página Web para Clínica de Kinesiología Korporis
+
 Descripción
-Este proyecto consiste en la creación de una página web para la clínica de kinesiología Korporis. El objetivo de esta página es proporcionar a los usuarios una plataforma donde puedan conocer más sobre los servicios ofrecidos por la clínica, obtener información sobre tratamientos y reservar citas.
+Este proyecto consiste en la creación de una página web estática para la clínica de kinesiología Korporis. El objetivo de esta página es proporcionar a los usuarios una plataforma donde puedan conocer más sobre los servicios ofrecidos por la clínica, obtener información sobre tratamientos y reservar citas.
 
 Características
 
