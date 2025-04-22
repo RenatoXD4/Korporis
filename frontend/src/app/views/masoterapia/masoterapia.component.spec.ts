@@ -9,9 +9,8 @@ describe('MasoterapiaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MasoterapiaComponent],
-      imports: [SharedModule],
-    })
+    imports: [SharedModule, MasoterapiaComponent],
+})
     .compileComponents();
     
     fixture = TestBed.createComponent(MasoterapiaComponent);

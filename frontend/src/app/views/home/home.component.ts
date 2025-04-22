@@ -4,6 +4,10 @@ import * as L from 'leaflet';
 import Swiper from 'swiper';
 import { Autoplay } from 'swiper/modules';
 import { Navigation, Pagination } from 'swiper/modules';
+import { FooterComponent } from '../../layouts/footer/footer.component';
+import { PreciosComponent } from '../../layouts/precios/precios.component';
+import { ServiciosTodosComponent } from '../../layouts/servicios/serviciosTodos.component';
+import { NavbarComponent } from '../../layouts/navbar/navbar.component';
 
 interface Service {
   name: string;
@@ -14,9 +18,11 @@ interface Service {
 }
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss'],
+    standalone: true,
+    imports: [NavbarComponent, ServiciosTodosComponent, PreciosComponent, FooterComponent]
 })
 export class HomeComponent implements AfterViewInit, OnDestroy {
 

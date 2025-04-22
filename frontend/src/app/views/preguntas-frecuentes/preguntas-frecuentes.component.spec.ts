@@ -9,9 +9,8 @@ describe('PreguntasFrecuentesComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [PreguntasFrecuentesComponent],
-      imports: [SharedModule],
-    });
+    imports: [SharedModule, PreguntasFrecuentesComponent],
+});
     fixture = TestBed.createComponent(PreguntasFrecuentesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

@@ -9,9 +9,8 @@ describe('FonoAdultoComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FonoAdultoComponent],
-      imports: [SharedModule],
-    })
+    imports: [SharedModule, FonoAdultoComponent],
+})
     .compileComponents();
     
     fixture = TestBed.createComponent(FonoAdultoComponent);

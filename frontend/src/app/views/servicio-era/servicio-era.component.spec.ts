@@ -9,9 +9,8 @@ describe('ServicioEraComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ServicioEraComponent],
-      imports: [SharedModule],
-    })
+    imports: [SharedModule, ServicioEraComponent],
+})
     .compileComponents();
     
     fixture = TestBed.createComponent(ServicioEraComponent);

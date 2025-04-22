@@ -9,9 +9,8 @@ describe('ServicioneuroComponent', () => {
 
   beforeEach( () => {
      TestBed.configureTestingModule({
-      imports: [SharedModule],
-      declarations: [ServicioneuroComponent],
-    })
+    imports: [SharedModule, ServicioneuroComponent],
+})
     .compileComponents();
     
     fixture = TestBed.createComponent(ServicioneuroComponent);

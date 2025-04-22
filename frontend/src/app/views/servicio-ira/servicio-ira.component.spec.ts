@@ -9,9 +9,8 @@ describe('ServicioIRAComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ServicioIRAComponent],
-      imports: [SharedModule],
-    })
+    imports: [SharedModule, ServicioIRAComponent],
+})
     .compileComponents();
     
     fixture = TestBed.createComponent(ServicioIRAComponent);
