@@ -19,12 +19,11 @@ export class NavbarComponent implements OnInit {
     this.updateDropdownPlacement();
   }
 
-  // Actualizar la colocación basado en el tamaño de pantalla
   updateDropdownPlacement(): void {
     if (window.innerWidth < 768) {
-      this.dropdownPlacement = 'bottom'; // Para móviles
+      this.dropdownPlacement = 'bottom'; 
     } else {
-      this.dropdownPlacement = 'right-start'; // Para desktop
+      this.dropdownPlacement = 'right-start'; 
     }
     this.cdr.detectChanges();
   }
